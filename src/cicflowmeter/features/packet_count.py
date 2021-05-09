@@ -61,7 +61,7 @@ class PacketCount:
             return packet["TCP"].payload
         elif "UDP" in packet:
             return packet["UDP"].payload
-        return 0
+        return []
 
     def has_payload(self, packet_direction=None) -> int:
         """Calculates download and upload ratio.
